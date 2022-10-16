@@ -36,6 +36,11 @@ public class SubjectController {
     public Subject getSubject(@PathVariable String id) {
         return subjectService.getSubject(id);
     }
+    
+      @RequestMapping("/subjects/{name}")
+    public Subject getSubject(@PathVariable String id) {
+        return subjectService.getSubject(id);
+    }
 
     @RequestMapping(method = RequestMethod.POST, value = "/subjects")
     public void createSubject(@RequestBody Subject subject) {
