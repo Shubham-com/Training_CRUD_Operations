@@ -38,8 +38,8 @@ public class SubjectController {
     }
     
       @RequestMapping("/subjects/{name}")
-    public Subject getSubject(@PathVariable String id) {
-        return subjectService.getSubject(id);
+    public Subject getSubject(@PathVariable String name) {
+        return subjectService.getSubject(name);
     }
 
     @RequestMapping(method = RequestMethod.POST, value = "/subjects")
