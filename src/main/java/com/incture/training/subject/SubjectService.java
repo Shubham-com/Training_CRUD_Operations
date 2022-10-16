@@ -59,3 +59,9 @@ public class SubjectService {
         subjectRepository.deleteById(id);
     }
 }
+
+  public void deleteSubject(String name) {
+        //subjects.removeIf(t->t.getId().equals(name));
+        subjectRepository.deleteById(name);
+    }
+}
