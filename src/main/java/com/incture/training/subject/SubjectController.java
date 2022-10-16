@@ -56,6 +56,11 @@ public class SubjectController {
     public void deleteSubject(@PathVariable String id) {
         subjectService.deleteSubject(id);
     }
+    
+      @RequestMapping(method = RequestMethod.DELETE, value = "/subjects/{name}")
+    public void deleteSubject(@PathVariable String name) {
+        subjectService.deleteSubject(name);
+    }
 
     @RequestMapping("/admin")
     public String getAdminResponse(){
