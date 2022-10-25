@@ -51,6 +51,11 @@ public class SubjectController {
     public void updateSubject(@RequestBody Subject subject, @PathVariable String id) {
         subjectService.updateSubject(subject, id);
     }
+    
+    @RequestMapping(method = RequestMethod.PUT, value = "/subjects/{name}")
+    public void updateSubject(@RequestBody Subject subject, @PathVariable String name) {
+        subjectService.updateSubject(subject, name);
+    }
 
     @RequestMapping(method = RequestMethod.DELETE, value = "/subjects/{id}")
     public void deleteSubject(@PathVariable String id) {
