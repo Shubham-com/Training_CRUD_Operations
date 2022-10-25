@@ -53,7 +53,7 @@ public class SubjectController {
     }
     
     @RequestMapping(method = RequestMethod.PUT, value = "/subjects/{name}")
-    public void updateSubject(@RequestBody Subject subject, @PathVariable String name) {
+    public void updateSub(@RequestBody Subject subject, @PathVariable String name) {
         subjectService.updateSubject(subject, name);
     }
 
