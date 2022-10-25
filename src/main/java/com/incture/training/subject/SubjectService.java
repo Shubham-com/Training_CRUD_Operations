@@ -53,6 +53,9 @@ public class SubjectService {
 //            }
 //        }
         }
+    
+    public void updateSub(Subject subject, String name) {
+            subjectRepository.save(subject);
 
     public void deleteSubject(String id) {
         //subjects.removeIf(t->t.getId().equals(id));
